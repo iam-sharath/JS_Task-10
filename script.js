@@ -75,11 +75,15 @@ let a =[
 let div1 = document.getElementsByTagName("div")
 let line1 = document.getElementsByTagName("ul")
 
-for(i=0;i<6;i++){
-for(j in a[i]){
+for(i=0;i<a.length;i++){
+for(j in a[i])
+{
+if(j!='rating')
+{
 var inline1=document.createElement("li")
 line1[i].appendChild(inline1);
 inline1.innerText=a[i][j]
+}
 // console.log(a[i][j])
 }
 if(k="rating"){
@@ -95,44 +99,5 @@ for(i=0;i<90;i++){
 line1[i].style.width="500px"
 line1[i].style.height="270px"
 line1[i].style.flexWrap="wrap";
-
-// document.body.style.flexWrap="wrap";
-
-// line1[i].style.overflow="auto"
-
-// line1[i].style.wordBreak="break-all";
 line1[i].style.boxShadow='0 8px 16px 0 rgba(7,6,0,1.3)';
 }
-div1[i].style.display="flex";
-// document.body.style.display="flex";
-// document.body.style.justifyContent="space-around"
-// document.body.style.backgroundColor="rgba(0,0,255,0.1)"
-
-
-
-// console.log("aaaaaa"+bb)
-// let ul=document.getElementsByClassName("ul");
-// let lili=document.createElement("li");
-// lili.innerText=a[0]["id"];
-
-// var bb=a.forEach(obj=>{
-//     // let id = obj.id;
-//     // let title=obj.title;
-//     let price=obj.price
-// //    console.log(id,title)
-// //    console.log(price)
-// })
-// let ul1=document.getElementsByTagName("ul");
-// console.log(ul1)
-// let li1=document.createElement("li");
-// console.log(li1)
-// li1=document.appendChild(aaa())
-
-
-
-// // a.map((val,ind,arr)=>{
-// //     li1.innerText=bb;
-// //     aaa()
-// // })
-// // ul1.style.border="1px solid black"
-// console.log(li1)
